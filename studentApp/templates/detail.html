@@ -1,0 +1,22 @@
+{% extends 'master.html' %}}
+
+{% block content %}
+    <div class="mycard">
+        <h1>{{std.ho}} {{std.ten}}</h1>
+
+        <ul>
+            <li>Điểm quá trình 1: {{std.qt1}}</li>
+            <li>Điểm quá trình 2: {{std.qt2}}</li>
+            <li>Điểm giữa kì: {{std.mid}}</li>
+            <li>Điểm cuối kì: {{std.final}}</li>
+        </ul>
+
+        <hr>
+        
+        <p>
+            <center>
+                <h3><b>Điểm tổng kết: {{total_core}}</b></h3>
+            </center>
+        </p>
+    </div>
+{% endblock %}

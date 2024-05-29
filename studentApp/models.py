@@ -8,3 +8,6 @@ class Student(models.Model):
    qt2 = models.FloatField(default=0)
    mid = models.FloatField(default=0)
    final = models.FloatField(default=0)
+
+   def __str__(self):
+      return f'{self.ho} {self.ten}'

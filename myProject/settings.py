@@ -128,7 +128,7 @@ STATIC_ROOT = BASE_DIR / 'static-all'
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-	BASE_DIR / 'static-global'	
+	BASE_DIR / 'static-global'
 ]
 
 # Default primary key field type

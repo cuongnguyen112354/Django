@@ -19,3 +19,23 @@ def studentdetail(request, id):
 
 def main(request):
    return render(request, 'main.html')
+
+from django.shortcuts import redirect
+from django.contrib.auth import authenticate, login, logout
+
+def loginPage(request):
+   if request.method == 'POST':
+      username = request.POST['username']
+      password = request.POST['password']
+      print(username, password)
+      user = authenticate(request ,username=username, password=password)
+      if user is not None:
+         login(request, user)
+         return redirect('main')
+      return HttpResponse('Sai rồi!!!')
+   else:
+      return render(request, 'login.html')
+   
+def logoutPage(request):
+   logout(request)
+   return redirect('main')

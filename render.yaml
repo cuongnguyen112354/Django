@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: myProject
-    env: python
-    buildCommand: ""
-    startCommand: gunicorn myProject.wsgi

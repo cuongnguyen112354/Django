@@ -14,5 +14,8 @@
        "src": "/(.*)",
        "dest": "myProject/wsgi.py"
      }
-   ]
+   ],
+   "hooks": {
+     "build": "sh build.sh"
+   }
  }
